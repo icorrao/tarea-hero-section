@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200;300;400;500;600&display=swap');
+
+html {
+    min-width: 100vw;
+}
+
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+background-color: #F2F1EF;
+    font-family: 'Kanit', sans-serif;
+
+    /* overflow-x: hidden; */
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1.25rem 0;
+}
+
+header .logo {
+    text-decoration: none;
+    font-size: 2.5rem;
+    color: black;
+}
+
+header .logo i {
+    font-size: 1.875rem;
+    color: #EA4D34;
+    margin-right: 0.3125rem;
+}
+
+.menu {
+    display: none;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #000;
+    font-size: 1.25rem;
+    margin-right: 3.125rem;
+}
+
+header nav a:hover {
+    color: #EA4D34;
+}
+
+header nav a:last-child {
+    margin-right: 0;
+}
+
+.buttons-container {
+    font-size: 0;
+}
+
+.btn-white {
+    padding: 0.625rem 2.1875rem;
+    background-color: transparent;
+    font-family: 'Kanit', sans-serif;
+    font-size: 1.125rem;
+    font-weight: 500;
+    cursor: pointer;
+    
+}
+
+.btn-black {
+    padding: 0.625rem 2.1875rem;
+    background-color: #171513;
+    color: #fff;
+    font-family: 'Kanit', sans-serif;
+    font-size: 1.125rem;
+    font-weight: 300;
+    cursor: pointer;
+    
+}
+
+.section-content {
+display: flex;
+justify-content: space-between;
+align-items: center;
+width: 80%;
+margin: auto;
+}
+
+.section-content-right img {
+    height: 650px;
+}
+
+.profile{
+    display: none;
+}
+
+.section-content h1 {
+    font-size: 4.6875rem;
+    line-height: 1;
+    text-transform: uppercase;
+}
+
+.section-content h1 i {
+color: #EA4D34;
+font-size: 3.75rem;
+}
+
+
+
+.london {
+    text-decoration: line-through;
+}
+
+.section-content h3 {
+    font-size: 1.875rem;
+    text-transform: uppercase;
+    padding: 2.5rem 0;
+}
+
+.section-content h3  i{
+color: #EA4D34;
+font-size: 1.375rem;
+}
+
+.tag-abajo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #171513;
+    color: white;
+    transform: skewY(-3deg);
+    padding: 1.9rem 0.3rem;
+    width: 100%;
+
+    
+}
+
+.tag-abajo p {
+    font-size: 1.5625rem;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+.tag-abajo i {
+    font-size: 1.25rem;
+    color: #EA4D34;
+}
+
+@media (max-width:1741px) {
+    .section-content h1 i {
+        display: none;
+    }
+}
+
+@media (max-width:1366px) {
+
+.section-content h1 {
+    font-size: 50px;
+}
+.section-content h1 i {
+    display: none;
+}
+
+.tag-abajo {
+    position: absolute;
+    bottom: 35px;
+}
+
+}
+
+@media (max-width:768px) {
+    .section-content {
+        justify-content: center;
+        flex-wrap: wrap-reverse;
+        flex-direction: row-reverse;
+        margin: auto;
+    }
+
+    .section-content-left {
+        text-align: center;
+        margin-top: 30px;
+    }
+    .section-content-left h3 {
+        padding: 10px 0;
+    }
+    .section-content-right img {
+        height: 450px;
+    }
+
+    .buttons-container {
+        margin: 20px 0;
+    }
+
+    .tag-abajo {
+        margin-top: 20px;
+        position: static;
+        transform: skewY(0deg);
+        padding: 1.9rem 20px;
+        
+    }
+
+    .tag-abajo p, .tag-abajo i {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 690px) {
+    .tag-abajo {
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        padding: 1.7rem 5px;
+    }
+
+    header {
+        justify-content: space-between;
+        padding: 5px 30px;
+    }
+
+    header nav {
+        display: none;
+    }
+
+    .btn-header {
+        display: none;
+    }
+
+    .menu {
+        display: block;
+        font-size: 40px;
+    }
+
+    .section-content-left h1 {
+font-size: 40px;
+    }
+
+    .section-content-right {
+        text-align: center;
+    }
+
+    .section-content-right img {
+        width: 90%;
+        height: auto;
+        
+    }
+
+    h3 i {
+        display: none;
+    }
+
+    .btn-black {
+        display: none;
+    }
+}
