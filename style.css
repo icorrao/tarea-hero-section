@@ -90,6 +90,7 @@ margin: auto;
 
 .section-content-right img {
     height: 650px;
+    width: auto;
 }
 
 .profile{
@@ -170,6 +171,13 @@ font-size: 1.375rem;
 
 }
 
+@media (max-width:800px) {
+    .section-content-right img {
+        width: 500px;
+        height: auto;
+    }
+}
+
 @media (max-width:768px) {
     .section-content {
         justify-content: center;
@@ -187,6 +195,7 @@ font-size: 1.375rem;
     }
     .section-content-right img {
         height: 450px;
+        width: auto;
     }
 
     .buttons-container {
@@ -195,7 +204,7 @@ font-size: 1.375rem;
 
     .tag-abajo {
         margin-top: 20px;
-        position: static;
+        bottom: auto;
         transform: skewY(0deg);
         padding: 1.9rem 20px;
         
@@ -211,6 +220,7 @@ font-size: 1.375rem;
         flex-wrap: wrap;
         justify-content: space-evenly;
         padding: 1.7rem 5px;
+        bottom: auto
     }
 
     header {
