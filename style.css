@@ -149,6 +149,7 @@ font-size: 1.375rem;
     color: #EA4D34;
 }
 
+
 @media (max-width:1741px) {
     .section-content h1 i {
         display: none;
@@ -178,7 +179,7 @@ font-size: 1.375rem;
     }
 }
 
-@media (max-width:768px) {
+@media (max-width:1122px) {
     .section-content {
         justify-content: center;
         flex-wrap: wrap-reverse;
